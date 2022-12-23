@@ -1,0 +1,10 @@
+[Unit]
+Description = Publication data via shared memory to client
+
+[Service]
+Type = oneshot
+RemainAfterExit = true
+ExecStart = /home/Bible/tpc_server
+
+[Install]
+WantedBy = multi-user.target

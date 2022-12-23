@@ -1,0 +1,11 @@
+[Unit]
+Description = Client daemon to accept data and send via TCP
+
+[Service]
+Type = simple
+Restart = always
+RemainAfterExit = false
+ExecStart = /home/Bible/client
+
+[Install]
+WantedBy = multi-user.target
